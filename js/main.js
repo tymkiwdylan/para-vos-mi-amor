@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const alpha = Math.sin(particle.life * 0.1) * 0.5 + 0.5;
       particleCtx.beginPath();
       particleCtx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-      particleCtx.fillStyle = `rgba(255, 215, 0, ${alpha * particle.opacity})`;
+      particleCtx.fillStyle = `rgba(177, 156, 217, ${alpha * particle.opacity})`;
       particleCtx.fill();
       
       // Add twinkle effect
@@ -329,7 +329,7 @@ document.addEventListener('DOMContentLoaded', function() {
     mensajeFinal.innerHTML = `
       <h1>Te amo</h1>
       <p style="margin-top: 20px; font-size: 1.8em;">Con todo mi corazón,</p>
-      <p style="margin-top: 10px; font-size: 2.2em; color: #ffd700;">Dylan 💕</p>
+      <p style="margin-top: 10px; font-size: 2.2em; color: #b19cd9;">Dylan 💕</p>
     `;
     
     contenedor.appendChild(mensajeFinal);

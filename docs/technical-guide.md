@@ -40,7 +40,7 @@ Esta guía técnica está dirigida a desarrolladores que quieran entender la imp
   /* Colores principales */
   --primary-pink: #ff6b9d;
   --secondary-pink: #ffa4c4;
-  --accent-gold: #ffd700;
+  --accent-lavender: #b19cd9;
   --soft-white: #fff8f0;
   
   /* Efectos glassmorphism */
@@ -55,7 +55,7 @@ Esta guía técnica está dirigida a desarrolladores que quieran entender la imp
   --gradient-romantic: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --gradient-sunset: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
   --gradient-ocean: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --gradient-golden: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  --gradient-lavender: linear-gradient(135deg, #f0e6ff 0%, #d4c5f9 100%);
 }
 ```
 
@@ -240,7 +240,7 @@ const particleConfig = {
   speed: 0.5,             // Velocidad base
   size: { min: 1, max: 3 }, // Rango de tamaños
   opacity: { min: 0.2, max: 0.7 }, // Rango de opacidad
-  colors: ['#ffd700', '#ffffff', '#ff6b9d'] // Colores disponibles
+  colors: ['#b19cd9', '#ffffff', '#ff6b9d'] // Colores disponibles
 };
 ```
 

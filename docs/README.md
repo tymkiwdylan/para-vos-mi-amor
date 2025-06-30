@@ -49,7 +49,7 @@ para-vos-mi-amor/
 ```css
 --primary-pink: #ff6b9d      /* Rosa principal */
 --secondary-pink: #ffa4c4    /* Rosa secundario */
---accent-gold: #ffd700       /* Dorado de acento */
+--accent-lavender: #b19cd9   /* Lavanda de acento */
 --soft-white: #fff8f0        /* Blanco suave */
 --glass-bg: rgba(255, 255, 255, 0.1)  /* Fondo cristal */
 ```
@@ -58,7 +58,7 @@ para-vos-mi-amor/
 - **Sección 0, 4, 8**: Gradiente romántico (púrpura-azul)
 - **Sección 1, 5**: Gradiente atardecer (rosa-rojo)
 - **Sección 2, 6**: Gradiente océano (azul-púrpura)
-- **Sección 3, 7**: Gradiente dorado (crema-durazno)
+- **Sección 3, 7**: Gradiente lavanda (crema-durazno)
 
 ## 🔧 Tecnologías Utilizadas
 
