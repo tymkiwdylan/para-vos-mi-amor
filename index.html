@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para vos, mi amor 💕</title>
+  <meta name="description" content="Un mensaje especial de amor - La carta de amor más hermosa">
+  <meta name="author" content="Dylan">
+  <meta name="theme-color" content="#ff6b9d">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Para vos, mi amor 💕">
+  <meta property="og:description" content="Un mensaje especial de amor">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💕</text></svg>">
+  
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Preconnect for better performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Librerías externas -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+</head>
+<body>
+  <!-- Progress indicator -->
+  <div class="progress-container">
+    <div class="progress-dot active" data-section="0"></div>
+    <div class="progress-dot" data-section="1"></div>
+    <div class="progress-dot" data-section="2"></div>
+    <div class="progress-dot" data-section="3"></div>
+    <div class="progress-dot" data-section="4"></div>
+    <div class="progress-dot" data-section="5"></div>
+    <div class="progress-dot" data-section="6"></div>
+    <div class="progress-dot" data-section="7"></div>
+    <div class="progress-dot" data-section="8"></div>
+  </div>
+
+  <div id="contenedor">
+    <div class="seccion" data-indice="0">
+      <div class="seccion-content">
+        <h1>Para vos, mi amor</h1>
+        <p>A veces las cosas no me salen como quiero y me pongo bastante nervioso. Durante el último mes dejé que esto afectara tanto a mí como a nuestra relación. Me doy cuenta que siempre que necesito separarme de mi familia lo hice yéndome a otro lugar, desapareciendo por completo y eso es algo que hoy claramente no puedo hacerlo porque pienso en vos y en que quiero estar cerca tuyo todo el tiempo.</p>
+      </div>
+    </div>
+    
+    <div class="seccion" data-indice="1">
+      <div class="seccion-content">
+        <p>Sé que no soy un novio perfecto, y muchas veces me cuesta admitir mis errores, pero estoy aprendiendo gracias a vos. He cometido fallos en nuestra relación, desde cosas pequeñas hasta errores más grandes como no ser siempre honesto, y quiero que sepas que estoy trabajando para ser mejor, porque vos te merecés lo mejor de mí.</p>
+      </div>
+    </div>
+    
+    <div class="seccion" data-indice="2">
+      <div class="seccion-content">
+        <p>Sé que a veces parece que me estanco y no progreso pero te juro que todos los días me levanto pensando en las cosas que hago mal y tengo que mejorar para vos porque me inspiras a ser una mejor persona. Tu forma de ver la vida, tu moralidad me impulsa a intentar ser mejor cada día.</p>
+      </div>
+    </div>
+    
+    <div class="seccion" data-indice="3">
+      <div class="seccion-content">
+        <p>A veces, me obsesiono con algo y voy como un caballo mirando solo eso y dejo todo el resto de lado y está muy mal. A veces me siento agobiado por muchas cosas y me termino desquitando con vos que sos la única persona que está a mi lado día a día y que me apoya con una paciencia que no sé cómo agradecértelo.</p>
+      </div>
+    </div>
+    
+    <div class="seccion" data-indice="4">
+      <div class="seccion-content">
+        <p>Peco muchas veces de enfocarme tanto en el futuro que dejo de lado el presente y es algo que voy a cambiar porque cada segundo que estoy con vos es un regalo que no quiero dejar pasar.</p>
+      </div>
+    </div>
+    
+    <div class="seccion" data-indice="5">
+      <div class="seccion-content">
+        <p>Aun así, todo lo que hago lo hago pensando en vos, en una vida juntos. Trabajo y arranco proyectos para tener suficiente para darte una vida cómoda. Todos los días pienso en qué puedo hacer para regalarte más cositas porque sé que te gustan los detalles.</p>
+      </div>
+    </div>
+    
+    <div class="seccion" data-indice="6">
+      <div class="seccion-content">
+        <p>Quiero llevarte a conocer Disney, París, Italia y estoy seguro de que te voy a llevar. Voy a comprar una casa donde podamos estar cómodos y vivir juntos porque quiero levantarme a tu lado todos los días de mi vida. Quiero desayunar, almorzar, merendar y cenar con vos todas las comidas por el resto de mi existencia.</p>
+      </div>
+    </div>
+    
+    <div class="seccion" data-indice="7">
+      <div class="seccion-content">
+        <p>Por el resto de mi vida, quiero compartir cada día con el amor de mi vida: vos. Quiero charlar, pelear, arreglarnos, dormir, comer y pasarla bien con la persona que me hace querer ser mejor, la que me da fuerza y me hace soñar en grande.</p>
+      </div>
+    </div>
+    
+    <div class="seccion" data-indice="8">
+      <div class="seccion-content">
+        <p>Gracias por ser vos, por estar a mi lado y por hacerme tan feliz. Espero que podamos sentarnos a hablar de esto y seguir construyendo nuestro futuro juntos.</p>
+      </div>
+    </div>
+    
+    <div id="instruccion">✨ Deslizá ← → o tocá para navegar ✨</div>
+  </div>
+  
+  <!-- Canvas for hearts and particle effects -->
+  <canvas id="corazones"></canvas>
+  <canvas id="particulas"></canvas>
+  
+  <!-- JavaScript principal -->
+  <script src="js/main.js"></script>
+</body>
+</html>
