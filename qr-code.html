@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💕 Para vos, mi amor - QR Code</title>
+  <meta name="description" content="Código QR romántico para acceder a mi mensaje de amor">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💕</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary-pink: #ff6b9d;
+      --secondary-pink: #ffa4c4;
+      --accent-rose-gold: #e6b8a2;
+      --soft-white: #fff8f0;
+      --glass-bg: rgba(255, 255, 255, 0.15);
+      --glass-border: rgba(255, 255, 255, 0.3);
+      --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.1);
+      --shadow-glow: 0 0 30px rgba(255, 107, 157, 0.4);
+      --gradient-romantic: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--gradient-romantic);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Animated background particles */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: 
+        radial-gradient(circle at 20% 20%, rgba(255, 107, 157, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 164, 196, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 60%, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
+      animation: shimmer 8s ease-in-out infinite;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    @keyframes shimmer {
+      0%, 100% { opacity: 0.5; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(1.05); }
+    }
+
+    /* Floating hearts animation */
+    .floating-hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .heart {
+      position: absolute;
+      font-size: 20px;
+      color: var(--primary-pink);
+      animation: float-up 15s infinite linear;
+      opacity: 0.7;
+    }
+
+    @keyframes float-up {
+      0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+      }
+      10% {
+        opacity: 0.7;
+      }
+      90% {
+        opacity: 0.7;
+      }
+      100% {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    /* Main container */
+    .qr-container {
+      background: var(--glass-bg);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      border: 2px solid var(--glass-border);
+      border-radius: 30px;
+      padding: 60px 40px;
+      text-align: center;
+      box-shadow: var(--shadow-soft), var(--shadow-glow);
+      position: relative;
+      max-width: 500px;
+      width: 100%;
+      animation: float 6s ease-in-out infinite;
+      z-index: 10;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-10px) rotate(0.5deg); }
+    }
+
+    /* Heart border effect */
+    .qr-container::before {
+      content: '';
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      right: -20px;
+      bottom: -20px;
+      background: linear-gradient(45deg, var(--primary-pink), var(--accent-rose-gold), var(--secondary-pink), var(--primary-pink));
+      border-radius: 40px;
+      z-index: -1;
+      animation: heart-glow 3s ease-in-out infinite;
+    }
+
+    @keyframes heart-glow {
+      0%, 100% { opacity: 0.6; transform: scale(1); }
+      50% { opacity: 0.9; transform: scale(1.02); }
+    }
+
+    /* Title styling */
+    .title {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3em;
+      font-weight: 700;
+      color: var(--soft-white);
+      margin-bottom: 20px;
+      text-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(255, 107, 157, 0.5);
+      background: linear-gradient(45deg, #ff6b9d, #e6b8a2, #ff6b9d);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: gradient-shift 3s ease-in-out infinite;
+      position: relative;
+    }
+
+    @keyframes gradient-shift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    .title::after {
+      content: '💕';
+      position: absolute;
+      top: -10px;
+      right: -40px;
+      font-size: 0.6em;
+      animation: pulse-heart 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse-heart {
+      0%, 100% { transform: scale(1); opacity: 0.7; }
+      50% { transform: scale(1.2); opacity: 1; }
+    }
+
+    /* QR Code container */
+    .qr-code-wrapper {
+      position: relative;
+      display: inline-block;
+      margin: 30px 0;
+      padding: 20px;
+      background: var(--soft-white);
+      border-radius: 20px;
+      box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+      transform: rotate(0deg);
+      transition: all 0.3s ease;
+    }
+
+    .qr-code-wrapper:hover {
+      transform: rotate(2deg) scale(1.05);
+      box-shadow: 
+        0 15px 40px rgba(0, 0, 0, 0.3),
+        0 0 30px rgba(255, 107, 157, 0.5);
+    }
+
+    /* Heart decorations around QR code */
+    .qr-code-wrapper::before,
+    .qr-code-wrapper::after {
+      content: '💖';
+      position: absolute;
+      font-size: 2em;
+      color: var(--primary-pink);
+      animation: rotate-hearts 4s ease-in-out infinite;
+    }
+
+    .qr-code-wrapper::before {
+      top: -15px;
+      left: -15px;
+      animation-delay: 0s;
+    }
+
+    .qr-code-wrapper::after {
+      bottom: -15px;
+      right: -15px;
+      animation-delay: 2s;
+    }
+
+    @keyframes rotate-hearts {
+      0%, 100% { transform: rotate(0deg) scale(1); }
+      50% { transform: rotate(180deg) scale(1.2); }
+    }
+
+    /* QR Code itself */
+    .qr-code {
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      display: block;
+    }
+
+    /* Subtitle */
+    .subtitle {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4em;
+      color: var(--soft-white);
+      margin: 20px 0;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      opacity: 0.95;
+    }
+
+    /* URL display */
+    .url {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.9em;
+      color: var(--accent-rose-gold);
+      margin: 15px 0;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      font-weight: 500;
+    }
+
+    /* Instructions */
+    .instructions {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.85em;
+      color: rgba(255, 248, 240, 0.8);
+      margin-top: 25px;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Sparkle decorations */
+    .sparkle {
+      position: absolute;
+      color: var(--accent-rose-gold);
+      font-size: 1.5em;
+      animation: sparkle 3s ease-in-out infinite;
+    }
+
+    @keyframes sparkle {
+      0%, 100% { opacity: 0.3; transform: scale(1) rotate(0deg); }
+      50% { opacity: 1; transform: scale(1.5) rotate(180deg); }
+    }
+
+    .sparkle:nth-child(1) { top: 10%; left: 15%; animation-delay: 0s; }
+    .sparkle:nth-child(2) { top: 20%; right: 10%; animation-delay: 1s; }
+    .sparkle:nth-child(3) { bottom: 15%; left: 20%; animation-delay: 2s; }
+    .sparkle:nth-child(4) { bottom: 25%; right: 15%; animation-delay: 0.5s; }
+
+    /* Print styles */
+    @media print {
+      body {
+        background: white;
+        color: black;
+      }
+      
+      .floating-hearts,
+      body::before {
+        display: none;
+      }
+      
+      .qr-container {
+        background: white;
+        border: 2px solid #ff6b9d;
+        box-shadow: none;
+        max-width: none;
+        margin: 0;
+        page-break-inside: avoid;
+      }
+      
+      .title {
+        color: #ff6b9d;
+        -webkit-text-fill-color: #ff6b9d;
+      }
+      
+      .subtitle {
+        color: #764ba2;
+      }
+      
+      .url {
+        color: #e6b8a2;
+      }
+      
+      .instructions {
+        color: #666;
+      }
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 600px) {
+      .qr-container {
+        padding: 40px 30px;
+        margin: 10px;
+      }
+      
+      .title {
+        font-size: 2.5em;
+      }
+      
+      .qr-code {
+        width: 180px;
+        height: 180px;
+      }
+      
+      .subtitle {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Floating hearts background -->
+  <div class="floating-hearts"></div>
+
+  <!-- Main QR code container -->
+  <div class="qr-container">
+    <!-- Sparkle decorations -->
+    <div class="sparkle">✨</div>
+    <div class="sparkle">⭐</div>
+    <div class="sparkle">✨</div>
+    <div class="sparkle">⭐</div>
+
+    <!-- Title -->
+    <h1 class="title">Para vos, mi amor</h1>
+
+    <!-- QR Code wrapper -->
+    <div class="qr-code-wrapper">
+      <!-- QR Code using QR Server API -->
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=http://tymkiwdylan.github.io/para-vos-mi-amor/&color=e6b8a2&bgcolor=fff8f0&ecc=H&margin=0" 
+           alt="QR Code para el mensaje de amor" 
+           class="qr-code">
+    </div>
+
+    <!-- Subtitle -->
+    <p class="subtitle">Escanea para ver mi mensaje</p>
+
+    <!-- URL -->
+    <p class="url">tymkiwdylan.github.io/para-vos-mi-amor</p>
+
+    <!-- Instructions -->
+    <p class="instructions">
+      💕 Apunta tu cámara al código QR o imprime esta tarjeta 💕
+    </p>
+  </div>
+
+  <script>
+    // Create floating hearts
+    function createFloatingHeart() {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.textContent = Math.random() > 0.5 ? '💕' : '💖';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (Math.random() * 10 + 10) + 's';
+      heart.style.fontSize = (Math.random() * 10 + 15) + 'px';
+      
+      document.querySelector('.floating-hearts').appendChild(heart);
+      
+      // Remove heart after animation
+      setTimeout(() => {
+        heart.remove();
+      }, 15000);
+    }
+
+    // Create hearts periodically
+    setInterval(createFloatingHeart, 3000);
+    
+    // Create initial hearts
+    for (let i = 0; i < 5; i++) {
+      setTimeout(createFloatingHeart, i * 1000);
+    }
+  </script>
+</body>
+</html> 
